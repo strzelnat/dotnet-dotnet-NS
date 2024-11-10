@@ -1,0 +1,29 @@
+﻿@model ContactModel
+
+@{
+ViewBag.Title = "Potwierdzenie usunięcia";
+Layout = "_Layout";
+}
+
+<h2>Potwierdzenie usunięcia</h2>
+
+<p>Czy na pewno chcesz usunąć kontakt?</p>
+<table class="table">
+    <tr>
+        <th>Imię</th>
+        <td>@Model.FirstName</td>
+    </tr>
+    <tr>
+        <th>Nazwisko</th>
+        <td>@Model.LastName</td>
+    </tr>
+    <tr>
+        <th>Kategoria</th>
+        <td>@Model.Category</td>
+    </tr>
+</table>
+
+<form method="post" asp-action="DeleteConfirmed" asp-route-id="@Model.Id">
+    <button type="submit" class="btn btn-danger">Tak</button>
+    <a href="@Url.Action("Index", "Contact")" class="btn btn-secondary">Powrót</a>
+</form>
