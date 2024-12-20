@@ -26,7 +26,7 @@ public class ContactModel
     [Phone]
     [Display(Name = "Numer Telefonu")]
 
-    
+    [RegularExpression("\\d\\d\\d \\d\\d\\d \\d\\d\\d")]
     public string PhoneNumber { get; set; }
     
     [DataType(DataType.Date)]

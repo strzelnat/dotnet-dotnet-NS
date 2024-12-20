@@ -10,43 +10,39 @@ public class MemoryContactService : IContactService
             1,
             new ContactModel
             {
-                FirstName = "Jane",
-                LastName = "Smith",
-                Category = Category.Friend,
-                Id = 2,
-                Email = "jane.smith@yahoo.com",
-                PhoneNumber = "07777777777",
-                BirthDate = new DateTime(1990, 5, 15)
-
+                FirstName = "John",
+                LastName = "Doe",
+                Category = Category.Family,
+                Id = 1,
+                Email = "john.doe@gmail.com",
+                PhoneNumber = "08888888888",
+                BirthDate = new DateTime(2005, 1, 1)
             }
         },
-        
         {
             2,
             new ContactModel
             {
-                FirstName = "Michael",
-                LastName = "Johnson",
-                Category = Category.Business,
-                Id = 3,
-                Email = "michael.johnson@outlook.com",
-                PhoneNumber = "06666666666",
-                BirthDate = new DateTime(1985, 8, 23)
-
+                FirstName = "Eve",
+                LastName = "Fisher",
+                Category = Category.Friend,
+                Id = 2,
+                Email = "eve.fisher@gmail.com",
+                PhoneNumber = "088888677778",
+                BirthDate = new DateTime(2000, 10, 2)
             }
         },
         {
             3,
             new ContactModel
             {
-                FirstName = "Emily",
-                LastName = "Brown",
-                Category = Category.Family,
-                Id = 4,
-                Email = "emily.brown@hotmail.com",
-                PhoneNumber = "05555555555",
-                BirthDate = new DateTime(2000, 12, 3)
-
+                FirstName = "Mark",
+                LastName = "Hamster",
+             
+                Id = 3,
+                Email = "m.hamster@gmail.com",
+                PhoneNumber = "08882228888",
+                BirthDate = new DateTime(1900, 10, 1)
             }
         }
     };
